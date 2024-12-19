@@ -100,11 +100,11 @@
   border: none;
   background-color: transparent;
 }
-.main .about-company {
+.main .main-btn {
   display: flex;
   gap: 15px;
 }
-.main .about-company a {
+.main .main-btn a {
   text-decoration: none;
   font-family: "PT Sans";
   font-weight: 700;
@@ -114,7 +114,7 @@
   text-transform: uppercase;
   color: #fff;
 }
-.main .about-company a:hover {
+.main .main-btn a:hover {
   color: #e5e5e5;
 }
 .main .main-blocks {
@@ -206,14 +206,14 @@
 }
 
 .bg-gray {
-  background-color: #f8f6fa;
+  background-color: #f3f3f7;
   width: 1920px;
   height: 876px;
   margin: auto;
   margin-bottom: 150px;
 }
-
-h2 {
+.bg-gray h2 {
+  margin-top: 107px;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 40px;
@@ -221,15 +221,20 @@ h2 {
   color: #333;
   margin-bottom: 60px;
 }
-
-.about-company {
-  padding: 100px 312px;
-}
-.about-company .abc-items {
+.bg-gray .about-company {
   display: flex;
   justify-content: space-between;
 }
-.about-company .about-company_title p {
+.bg-gray .about-company .abc-items {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-gray .about-company .about-company_title {
+  margin-right: 134px;
+  width: 636px;
+  height: 550px;
+}
+.bg-gray .about-company .about-company_title p {
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 16px;
@@ -237,20 +242,22 @@ h2 {
   color: #333;
   margin-bottom: 16px;
 }
-.about-company .about-company_title ul {
+.bg-gray .about-company .about-company_title ul {
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #333;
+}
+.bg-gray .about-company .about-company_title ul li {
   margin-bottom: 16px;
 }
-.about-company .about-company_blocks {
+.bg-gray .about-company .about-company_blocks {
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: 24px;
 }
-.about-company .about-company_blocks .about-company_block {
+.bg-gray .about-company .about-company_blocks .about-company_block {
   text-transform: uppercase;
   font-family: "PT Sans";
   border-radius: 20px;
@@ -259,8 +266,9 @@ h2 {
   color: #fff;
   width: 526px;
   height: 170px;
+  margin-bottom: 103px;
 }
-.about-company .about-company_blocks .about-company_block span {
+.bg-gray .about-company .about-company_blocks .about-company_block span {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 13px;
@@ -269,10 +277,416 @@ h2 {
   text-transform: uppercase;
   color: #fff;
 }
-.about-company .about-company_blocks .about-company_block p {
+.bg-gray .about-company .about-company_blocks .about-company_block p {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 19px;
   line-height: 140%;
   color: #fff;
-}/*# sourceMappingURL=styleSCSS.css.map */
+  margin-top: 40px;
+}
+.bg-gray .about-company .about-company_blocks .block-img {
+  width: 526px;
+  height: 350px;
+}
+
+.news {
+  margin-bottom: 150px;
+  font-family: "PT Sans";
+}
+.news .news-top {
+  display: flex;
+  justify-content: space-between;
+}
+.news .news-top .news-title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #333;
+}
+.news .news-top .news-src {
+  display: flex;
+  justify-content: space-between;
+}
+.news .news-top .news-src a {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d348b;
+  text-decoration: none;
+}
+.news .news-top .news-src a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+.news .news-blocks {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 24px;
+}
+.news .news-blocks .news-block {
+  margin-right: 24px;
+}
+.news .news-blocks span {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 140%;
+  color: #333;
+}
+.news .news-blocks p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333;
+  margin-top: 18px;
+}
+.news .news-blocks .news-img {
+  margin-bottom: 15px;
+}
+.news .news-blocks .news-img img {
+  margin-bottom: 25px;
+  width: 306px;
+  height: 214px;
+}
+.news .news-blocks .news-img span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.cont-color {
+  margin: auto;
+  background-color: #574ea6;
+  width: 1920px;
+  height: 120px;
+}
+.cont-color .contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-color .contacts a {
+  display: flex;
+  font-family: "PT Sans";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.cont-color .contacts a img {
+  margin-right: 20px;
+}
+.cont-color .contacts ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.cont-color .contacts ul li {
+  margin-right: 30px;
+}
+.cont-color .contacts ul li img {
+  width: 26px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.bg-purp {
+  background-color: #3D348B;
+  width: 1920px;
+  margin: auto;
+}
+.bg-purp .footer .footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.bg-purp .footer .footer-items .list-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  list-style: none;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.bg-purp .footer .footer-items li {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.bg-purp .footer .footer-items li a {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  list-style: none;
+}
+.bg-purp .footer .end {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.bg-purp .footer .end span {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.steps {
+  width: 1920px;
+  height: 68px;
+  background-color: #f3f3f7;
+  margin: auto;
+  display: flex;
+}
+.steps ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  padding-left: 312px;
+}
+.steps ul li {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 40px;
+}
+.steps ul li a {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 40px;
+  text-decoration: none;
+}
+.steps ul li img {
+  margin-left: 15px;
+}
+
+.documents {
+  margin: auto;
+  width: 856px;
+  height: 1503px;
+  margin-bottom: 150px;
+}
+.documents .doctitle h1 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin-top: 76px;
+  margin-bottom: 60px;
+}
+.documents .firstpart {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 60px;
+}
+.documents .firstpart p {
+  margin-bottom: 20px;
+}
+.documents .firstpart li {
+  margin-bottom: 20px;
+}
+.documents .secondpart {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 60px;
+}
+.documents .secondpart p {
+  margin-bottom: 20px;
+}
+.documents .secondpart li {
+  margin-bottom: 20px;
+}
+.documents .thirdpart {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 60px;
+}
+.documents .thirdpart p {
+  margin-bottom: 20px;
+}
+.documents .thirdpart li {
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  margin: auto;
+  width: 856px;
+  height: 1503px;
+  margin-bottom: 150px;
+}
+.sign-up .signtitle h1 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin-top: 77px;
+}
+.sign-up .inputs {
+  width: 856px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 60px;
+}
+.sign-up .inputs .input {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 24px;
+}
+.sign-up .inputs .input p {
+  margin-bottom: 20px;
+}
+.sign-up .inputs .input input {
+  border: solid 1px;
+  border-radius: 5px;
+  width: 416px;
+  height: 35px;
+  padding: 10px 0;
+  margin-right: 24px;
+}
+.sign-up .inputs .input select {
+  border: solid 1px;
+  width: 416px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 24px;
+}
+.sign-up .inputs .input textarea {
+  border: solid 1px;
+  width: 416px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 24px;
+}
+.sign-up .inputs .file {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+}
+.sign-up .inputs .file p {
+  margin-bottom: 20px;
+}
+.sign-up .inputs .file .file-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background-color: #5DB7DE;
+  color: #fff;
+  transition: all 0.3s;
+}
+.sign-up .inputs .file .file-btn:hover {
+  background-color: #408cac;
+  transition: all 0.3s;
+}
+.sign-up .radio-btns {
+  font-family: "PT Sans";
+  display: grid;
+  margin-bottom: 60px;
+}
+.sign-up .radio-btns h2 {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+  color: #333;
+}
+.sign-up .radio-btns input {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+}
+.sign-up .send {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 150px;
+}
+.sign-up .send a {
+  font-family: "PT Sans";
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d348b;
+  text-decoration: none;
+}
+.sign-up .send a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+/*input{
+                border: none;
+                border-radius: 10px;
+                padding: 8px 10px;
+                background-color: $blue;
+                color: #fff;
+                transition: all 0.3s;
+
+                &:hover{
+                    background-color: #408cac;
+                    transition: all 0.3s;
+                }
+            }*//*# sourceMappingURL=styleSCSS.css.map */
