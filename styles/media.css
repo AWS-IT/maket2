@@ -1,0 +1,199 @@
+@media (max-width: 1024px) {
+    .container{
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .nav{
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+    }
+
+
+
+    .bg-img{
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .main{
+      flex-direction: column;
+    }
+  
+    .main-text{
+      text-align: center;
+    }
+
+    .main .main-text span{
+      font-size: 70px;
+    }
+    .main .main-text p{
+      font-size: 35px;
+    }
+  
+    .main .main-btn{
+      gap: 20px;
+    }
+  
+    .main .main-blocks{
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .main .main-blocks .main-block{
+      width: 580px;
+      height: 480px;   
+    }
+  }
+  
+
+
+
+
+
+
+
+  @media (max-width: 768px) and (min-width: 768px) {
+    .container{
+      height: auto;
+      max-width: 1300px;
+      margin: auto;
+      padding: 44px 0;
+    }
+
+  
+    .bg-img {
+      height: auto;
+    }
+  
+    .main-text{
+      text-align: center;
+    }
+
+    .main .main-text span {
+      font-size: 140px;
+    }
+  
+    .main .main-text p {
+      font-size: 100px;
+    }
+  
+    .main .main-btn a {
+      font-size: 140px;
+    }
+
+    .main .main-blocks .main-block{
+      width: 800px;
+      height: 680px;
+    }
+
+    .block-text{
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+
+    .block-title{
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container{
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .main {
+      padding: 20px 10px;
+    }
+
+    .main .main-text{
+      text-align: center;
+      padding: 30px;
+
+    }
+  
+    .main .main-text span {
+      font-size: 140px;
+    }
+    .main .main-text p {
+      font-size: 80px;
+    } 
+  
+    .main .main-blocks {
+      grid-template-columns: 1fr;
+    }
+  
+    .main .main-blocks .main-block {
+      padding: 20px;
+    }
+
+    .main-btn{
+      display: none;
+    }
+
+    .main .main-blocks .main-block{
+      width: 1000px;
+      height: 800px;
+    }
+
+    .block-text{
+      font-size: 100px;
+      margin-bottom: 30px;
+    }
+
+    .block-title{
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+
+
+
+
+
+
+    .services {
+      padding: 20px 10px;
+    }
+
+    .services-sources{
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .sources-title_1 {
+      font-size: 140px;
+    }
+    .main .main-text p {
+      font-size: 80px;
+    } 
+  
+    .services-blocks {
+      grid-template-columns: 1fr;
+    }
+  
+    .services .servicess .services-block {
+      padding: 20px;
+    }
+
+    .services .services-blocks .services-block{
+      width: 1000px;
+      height: 800px;
+    }
+
+    .block-text{
+      font-size: 100px;
+      margin-bottom: 30px;
+    }
+
+    .block-title{
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+  }
+  

@@ -43,7 +43,7 @@ $parp: #3D348B;
         }
         a:hover{
     color: #5d5d5d;
-}
+    }
 }    
 
 
@@ -63,6 +63,22 @@ $parp: #3D348B;
     border-color: gray;
 }
 }
+
+
+.lang{
+    width: 40px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+
+    span{
+        margin-right: 10px;
+    }
+    img{
+        margin: auto; 
+    }
+}
+
 
 
 
@@ -118,7 +134,9 @@ $parp: #3D348B;
 
     .main-btn{
         display: flex;
-        gap: 15px;
+        margin-right: 15px;
+        width: 161px;
+        height: 30px;
 
         a{
             text-decoration: none;
@@ -129,9 +147,14 @@ $parp: #3D348B;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #fff;
+            align-items: center;
+            margin-right: 15px;
         }
         a:hover{
             color: #e5e5e5;
+        }
+        img{
+            align-items: center;
         }
     }
 
@@ -155,8 +178,9 @@ $parp: #3D348B;
             height: 250px;
         }
         .block-title{
-            margin-bottom: 118px;
+            margin-bottom: 130px;
         }
+        
     }
 }
 
@@ -175,37 +199,54 @@ $parp: #3D348B;
     }
 
     .services-sources{
-        width: 306px;
-        height: 217px;
-
 
         .services-source{
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-
+            width: 306px;
+            height: 67px;
+            font-family: 'PT Sans';
             a{
-                font-family: 'PT Sans';
-                text-decoration: none;
-                border-bottom: 1px dashed;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 140%;
-                color: #3d348b;
+                    text-decoration: none;
+                    border-bottom: 1px dashed;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #3d348b;
+                }
+
+            .sources-title_1{
+                margin-right: 10px;
+                width: 306px;
+                height: 67px;
+                margin: auto;
+            }    
+            .sources-title{
+                margin-right: 10px;
+                width: 306px;
+                height: 45px;
+                margin: auto; 
             }
-            button{
-                border: none;
-                border-radius: 10px;
-                padding: 8px 10px;
-                width: 46px;
-                height: 34px;
-                background-color: $blue;
-                color: #fff;
-                transition: all 0.3s;
-                
-                &:hover{
-                    background-color: #408cac;
+
+        .services-btn{      
+            margin: auto;
+
+                button{
+                    border: none;
+                    border-radius: 10px;
+                    padding: 8px 10px;
+                    width: 46px;
+                    height: 34px;
+                    background-color: $blue;
+                    color: #fff;
                     transition: all 0.3s;
+                    
+                    
+                    &:hover{
+                        background-color: #408cac;
+                        transition: all 0.3s;
+                    }
                 }
             }
         }   
@@ -229,7 +270,18 @@ $parp: #3D348B;
             color: #fff;
             width: 416px;
             height: 223px;  
+            flex-direction: column;
+    
+        .block-title{
+            margin-bottom: 130px;
         }
+   
+        .block-text{
+            align-self: flex-start;
+        }
+        }
+
+        
     }
 }
 
@@ -292,7 +344,6 @@ $parp: #3D348B;
             gap: 24px;
             
             .about-company_block{
-                text-transform: uppercase;
                 font-family: 'PT Sans';
                 border-radius: 20px;
                 padding: 30px 35px;
@@ -315,7 +366,7 @@ $parp: #3D348B;
                 p{
                     font-family: 'PT Sans';
                     font-weight: 700;
-                    font-size: 19px;
+                    font-size: 20px;
                     line-height: 140%;
                     color: #fff;
                     margin-top: 40px;
@@ -348,6 +399,7 @@ $parp: #3D348B;
         .news-src{
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             a{
                 display: flex;
@@ -358,6 +410,8 @@ $parp: #3D348B;
                 text-transform: uppercase;
                 color: #3d348b;
                 text-decoration: none;
+                align-items: center;
+
                 img{
                     width: 30px;
                     height: 30px; 
@@ -427,7 +481,15 @@ $parp: #3D348B;
             font-size: 16px;
             line-height: 140%;
             color: #fff;
-
+            align-items: center;
+            .phoneicon{
+                width: 22.5px;
+                height: 22.5px;
+            }
+            .mailicon{
+                width: 25px;
+                height: 20px;
+            }
             img{
                 margin-right: 20px;
             }
@@ -599,7 +661,7 @@ $parp: #3D348B;
     margin: auto;
     width: 856px;
     height: 1503px;
-    margin-bottom: 150px;
+   
 
     .doctitle{
         h1{
@@ -626,6 +688,7 @@ $parp: #3D348B;
         }
         li{
             margin-bottom: 20px;
+            list-style-position: inside;
         }
     }
 
@@ -643,6 +706,7 @@ $parp: #3D348B;
 
         li{
             margin-bottom: 20px;
+            list-style-position: inside;
         }
     }
 
@@ -659,6 +723,7 @@ $parp: #3D348B;
         }
         li{
             margin-bottom: 20px;
+            list-style-position: inside;
         }
     }
 }
@@ -725,7 +790,6 @@ $parp: #3D348B;
             text-transform: uppercase;
             color: #333;
             margin-bottom: 24px;
-            
 
             p{
                 margin-bottom: 20px;
@@ -764,16 +828,20 @@ $parp: #3D348B;
             color: #333;
 
             p{
-                margin-bottom: 20px;
+                margin-bottom: 28px;
             }
 
-            .file-btn{
+            input{
+                display: none;
+            }
+            label{
                 border: none;
                 border-radius: 10px;
                 padding: 8px 10px;
                 background-color: $blue;
                 color: #fff;
                 transition: all 0.3s;
+                margin-right: 20px;
                 
                 &:hover{
                     background-color: #408cac;
@@ -786,23 +854,70 @@ $parp: #3D348B;
     .radio-btns{
         font-family: 'PT Sans';
         display: grid;
-        margin-bottom: 60px;
+        margin-bottom: 55px;
         
         h2{
           font-weight: 700;
             font-size: 27px;
             line-height: 140%;
             color: #333; 
+            margin-bottom: 40px;
         }
-        input{
+        label{
             font-weight: 700;
             font-size: 13px;
             line-height: 140%;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #333;
+            display: inline-flex;
+            gap: 8px;
+            margin-bottom: 15px;
         }
     }
+
+    .contact-info{
+        h2{
+            font-family: 'PT Sans';
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 140%;
+            color: #333; 
+            margin-bottom: 40px;
+          }
+
+          .c-inputs{
+            width: 856px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 60px;  
+
+            .c-input{
+                font-family: 'PT Sans';
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 140%;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #333;
+                margin-bottom: 24px;
+
+                p{
+                    margin-bottom: 20px;
+                }
+                input{
+                    border: solid 1px;
+                    border-radius: 5px;
+                    width: 416px;
+                    height: 35px;
+                    padding: 10px 0;
+                    margin-right: 24px;
+                }
+            }
+          }
+    }
+
     .send{
         display: flex;
         justify-content: center;
@@ -818,6 +933,7 @@ $parp: #3D348B;
             text-transform: uppercase;
             color: #3d348b;
             text-decoration: none;
+            align-items: center;
            
             img{
                 width: 30px;

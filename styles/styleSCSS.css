@@ -55,6 +55,19 @@
   border-color: gray;
 }
 
+.lang {
+  width: 40px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+.lang span {
+  margin-right: 10px;
+}
+.lang img {
+  margin: auto;
+}
+
 .bg-img {
   background-image: url(../img/bg-img1.jpg);
   width: 1920px;
@@ -102,7 +115,9 @@
 }
 .main .main-btn {
   display: flex;
-  gap: 15px;
+  margin-right: 15px;
+  width: 161px;
+  height: 30px;
 }
 .main .main-btn a {
   text-decoration: none;
@@ -113,9 +128,14 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
+  align-items: center;
+  margin-right: 15px;
 }
 .main .main-btn a:hover {
   color: #e5e5e5;
+}
+.main .main-btn img {
+  align-items: center;
 }
 .main .main-blocks {
   display: grid;
@@ -137,7 +157,7 @@
   height: 250px;
 }
 .main .main-blocks .block-title {
-  margin-bottom: 118px;
+  margin-bottom: 130px;
 }
 
 .services {
@@ -153,17 +173,15 @@
   color: #333;
   margin-bottom: 60px;
 }
-.services .services-sources {
-  width: 306px;
-  height: 217px;
-}
 .services .services-sources .services-source {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  width: 306px;
+  height: 67px;
+  font-family: "PT Sans";
 }
 .services .services-sources .services-source a {
-  font-family: "PT Sans";
   text-decoration: none;
   border-bottom: 1px dashed;
   font-weight: 400;
@@ -171,7 +189,22 @@
   line-height: 140%;
   color: #3d348b;
 }
-.services .services-sources .services-source button {
+.services .services-sources .services-source .sources-title_1 {
+  margin-right: 10px;
+  width: 306px;
+  height: 67px;
+  margin: auto;
+}
+.services .services-sources .services-source .sources-title {
+  margin-right: 10px;
+  width: 306px;
+  height: 45px;
+  margin: auto;
+}
+.services .services-sources .services-source .services-btn {
+  margin: auto;
+}
+.services .services-sources .services-source .services-btn button {
   border: none;
   border-radius: 10px;
   padding: 8px 10px;
@@ -181,7 +214,7 @@
   color: #fff;
   transition: all 0.3s;
 }
-.services .services-sources .services-source button:hover {
+.services .services-sources .services-source .services-btn button:hover {
   background-color: #408cac;
   transition: all 0.3s;
 }
@@ -203,6 +236,13 @@
   color: #fff;
   width: 416px;
   height: 223px;
+  flex-direction: column;
+}
+.services .services-blocks .services-block .block-title {
+  margin-bottom: 130px;
+}
+.services .services-blocks .services-block .block-text {
+  align-self: flex-start;
 }
 
 .bg-gray {
@@ -258,7 +298,6 @@
   gap: 24px;
 }
 .bg-gray .about-company .about-company_blocks .about-company_block {
-  text-transform: uppercase;
   font-family: "PT Sans";
   border-radius: 20px;
   padding: 30px 35px;
@@ -280,7 +319,7 @@
 .bg-gray .about-company .about-company_blocks .about-company_block p {
   font-family: "PT Sans";
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 140%;
   color: #fff;
   margin-top: 40px;
@@ -308,6 +347,7 @@
 .news .news-top .news-src {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .news .news-top .news-src a {
   display: flex;
@@ -318,6 +358,7 @@
   text-transform: uppercase;
   color: #3d348b;
   text-decoration: none;
+  align-items: center;
 }
 .news .news-top .news-src a img {
   width: 30px;
@@ -380,6 +421,15 @@
   font-size: 16px;
   line-height: 140%;
   color: #fff;
+  align-items: center;
+}
+.cont-color .contacts a .phoneicon {
+  width: 22.5px;
+  height: 22.5px;
+}
+.cont-color .contacts a .mailicon {
+  width: 25px;
+  height: 20px;
 }
 .cont-color .contacts a img {
   margin-right: 20px;
@@ -499,7 +549,6 @@
   margin: auto;
   width: 856px;
   height: 1503px;
-  margin-bottom: 150px;
 }
 .documents .doctitle h1 {
   font-family: "PT Sans";
@@ -524,6 +573,7 @@
 }
 .documents .firstpart li {
   margin-bottom: 20px;
+  list-style-position: inside;
 }
 .documents .secondpart {
   font-family: "PT Sans";
@@ -538,6 +588,7 @@
 }
 .documents .secondpart li {
   margin-bottom: 20px;
+  list-style-position: inside;
 }
 .documents .thirdpart {
   font-family: "PT Sans";
@@ -552,6 +603,7 @@
 }
 .documents .thirdpart li {
   margin-bottom: 20px;
+  list-style-position: inside;
 }
 
 .sign-up {
@@ -621,38 +673,82 @@
   color: #333;
 }
 .sign-up .inputs .file p {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
-.sign-up .inputs .file .file-btn {
+.sign-up .inputs .file input {
+  display: none;
+}
+.sign-up .inputs .file label {
   border: none;
   border-radius: 10px;
   padding: 8px 10px;
   background-color: #5DB7DE;
   color: #fff;
   transition: all 0.3s;
+  margin-right: 20px;
 }
-.sign-up .inputs .file .file-btn:hover {
+.sign-up .inputs .file label:hover {
   background-color: #408cac;
   transition: all 0.3s;
 }
 .sign-up .radio-btns {
   font-family: "PT Sans";
   display: grid;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .sign-up .radio-btns h2 {
   font-weight: 700;
   font-size: 27px;
   line-height: 140%;
   color: #333;
+  margin-bottom: 40px;
 }
-.sign-up .radio-btns input {
+.sign-up .radio-btns label {
   font-weight: 700;
   font-size: 13px;
   line-height: 140%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #333;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.sign-up .contact-info h2 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 40px;
+}
+.sign-up .contact-info .c-inputs {
+  width: 856px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 60px;
+}
+.sign-up .contact-info .c-inputs .c-input {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 24px;
+}
+.sign-up .contact-info .c-inputs .c-input p {
+  margin-bottom: 20px;
+}
+.sign-up .contact-info .c-inputs .c-input input {
+  border: solid 1px;
+  border-radius: 5px;
+  width: 416px;
+  height: 35px;
+  padding: 10px 0;
+  margin-right: 24px;
 }
 .sign-up .send {
   display: flex;
@@ -670,6 +766,7 @@
   text-transform: uppercase;
   color: #3d348b;
   text-decoration: none;
+  align-items: center;
 }
 .sign-up .send a img {
   width: 30px;
